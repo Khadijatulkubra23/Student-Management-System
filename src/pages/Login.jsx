@@ -141,6 +141,18 @@ const Login = () => {
             {loading ? "Logging in..." : "Login"}
           </button>
         </form>
+
+        <div className="mt-6 border-t border-stone-800 pt-6 text-center">
+          <p className="text-sm text-stone-400">
+            Don't have an account?{" "}
+            <Link
+              to="/register"
+              className="font-semibold text-[#e8892f] transition hover:text-[#f2a65a]"
+            >
+              Register now
+            </Link>
+          </p>
+        </div>
       </div>
     </div>
   );
